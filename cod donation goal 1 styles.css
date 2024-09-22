@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent; /* For transparency on stream */
+}
+
+#widget-container {
+    position: relative;
+    width: 700px; /* Adjust based on your design */
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#progress-container {
+    width: 90%;
+    height: 40px;
+    background-color: #333; /* Dark background */
+    border: 2px solid #FFF; /* White border */
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+#progress-bar {
+    width: 100%;
+    height: 100%;
+    background-color: #111; /* Fallback color */
+}
+
+#progress {
+    height: 100%;
+    width: 0%; /* This will be updated dynamically */
+    background: linear-gradient(90deg, green, yellow, red); /* Gradient for the bar */
+    transition: width 0.5s ease; /* Smooth progress */
+}
